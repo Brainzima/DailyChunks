@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<style type="text/css">
+		body{
+			background-image: linear-gradient(#d1d6e6,#b6bfd9, #abb6d6);
+			min-height: 900px;
+		}
+		.container{
+			width: 600px;
+			min-height: 500px;
+			background-color: aquamarine;
+			margin: auto;
+			border-radius: 50px;
+			text-align: center;
+		}
+		.title{
+			font-family: cursive;
+			font-size: 28pt;
+		}
+		.form{
+			width: 70%;
+			margin: auto;
+		}
+		.input-field{
+			width: 100%;
+			margin-top: 10px;
+			height: 40px;
+			border: none;
+			border-radius: 10px;
+			padding-left: 10px;
+		}
+		.form > textarea{
+			width: 100%;
+			margin-top: 10px;
+			border: none;
+			border-radius: 10px;
+			padding-left: 10px;
+		}
+		.input-btn{
+			width: 150px;
+			height: 40px;
+			border-radius: 20px;
+			border: none;
+			margin-top: 10px;
+		}
+		.input-btn:hover{
+			background-color: #b6bfdb;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<p class="title">Enquiry Form</p>
+
+		<form class="form" action="https://formspree.io/f/mrbgogaj" method="post">
+			<input type="text" name="name" placeholder="Name" class="input-field">
+			<input type="email" name="email" placeholder="Email" class="input-field">
+			<input type="number" name="mobile" placeholder="Mobile" class="input-field">
+			<input type="text" name="subject" placeholder="Subject" class="input-field">
+			<textarea placeholder="Enquiry..." rows="5" name="enquiry"></textarea>
+			<input type="submit" name="submit" value="Send Query" class="input-btn">
+		</form>
+	</div>
+
+</body>
+</html>
