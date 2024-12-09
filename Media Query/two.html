@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Two</title>
+    <style>
+        .container{
+            width: 100%;
+            background-color: antiquewhite;
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+        }
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .orange{
+            background-color: orange;
+        }
+        @media screen and (width<600px) {
+            .container{
+                display: block;
+            }
+            .box{
+                /* width: 100%; */
+                margin: 20px auto;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+    </div>
+</body>
+</html>
